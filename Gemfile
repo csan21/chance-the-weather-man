@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # PostgreSQL driver
 gem 'pg'
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Sinatra driver
 gem 'sinatra', '~> 1.0'
@@ -11,6 +12,7 @@ gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
 
 gem 'rake'
+gem 'pry'
 
 gem 'shotgun', '~>0.9.1'
 

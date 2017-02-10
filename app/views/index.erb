@@ -1,0 +1,18 @@
+<h1><%= @city %></h1>
+
+<h1><%= @temp.floor %> deg</h1>
+
+<span class="question">How do you feel?</span><br><br>
+<form id="mood-selector" action="/songs" method="post">
+  <select name="moods">
+    <option value="energetic">Energetic</option>
+    <option value="happy">Happy</option>
+    <option value="hopeful">Hopeful</option>
+    <option value="reflective">Reflective</option>
+  </select>
+  <input type="submit">
+</form>
+
+<br><br>
+
+<iframe id="spotify-player" src="https://embed.spotify.com/?uri=spotify:artist:1anyVhU62p31KFi8MEzkbf" frameborder="0" allowtransparency="true"></iframe>

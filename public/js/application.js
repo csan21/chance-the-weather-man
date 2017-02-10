@@ -1,7 +1,20 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
+  $('#mood-selector').on('submit', function(e){
+    e.preventDefault();
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+    var url = $(this).attr('action');
+    var data = $(this).serialize();
+
+    var ajaxRequest = $.ajax({
+      url: url,
+      method: 'POST',
+      data: data
+    });
+
+    ajaxRequest.done(function(response){
+      $('#spotify-player').attr('src', response);
+      $('#spotify-player').toggle();
+      $('#mood-selector').hide();
+    })
+  })
 });
