@@ -3,10 +3,11 @@
 }
 
 .container {
+  background-color: white;
   margin: 20px auto;
   width: 400px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  border: 2px solid black;
   text-align: center;
 }
 th {
@@ -15,4 +16,18 @@ th {
 
 .question {
 
+}
+
+body {
+  background-color: #6495ED;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0px;
 }
