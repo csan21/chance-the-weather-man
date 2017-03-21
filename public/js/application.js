@@ -12,9 +12,10 @@ $(document).ready(function() {
     });
 
     ajaxRequest.done(function(response){
-      $('#spotify-player').attr('src', response);
-      $('#spotify-player').toggle();
+      // $('#spotify-player').attr('src', response);
+      // $('#spotify-player').toggle();
       $('#mood-selector').hide();
+      $('body').after(response);
     })
   })
 });
